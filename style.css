@@ -1,8 +1,4 @@
 
-.modal {
-    background-color: white;
-}
-
 .modal-dialog {
     bottom: 100%;
     height: 100%;
@@ -40,31 +36,37 @@
 
 @media (min-width: 768px) {
     .modal-dialog {
-        bottom: inherit;
-        height: inherit;
-        left: inherit;
-        margin: 30px auto;
-        right: inherit;
-        top: inherit;
+        margin: 0 auto;
         width: 600px;
     }
 
-    .modal-content {
-        border-radius: 6px;
-        bottom: 20px;
-        left: inherit;
-        top: inherit;
-        width: inherit;
-    }
+    @media (min-height: 500px) {
+        .modal-dialog {
+            bottom: inherit;
+            height: inherit;
+            left: inherit;
+            margin: 30px auto;
+            right: inherit;
+            top: inherit;
+        }
 
-    .modal-body {
-        bottom: 60px;
-        top: 60px;
-    }
+        .modal-content {
+            border-radius: 6px;
+            bottom: 20px;
+            left: inherit;
+            top: inherit;
+            width: inherit;
+        }
 
-    .modal-footer {
-        bottom: 0;
-        height: 60px;
+        .modal-body {
+            bottom: 60px;
+            top: 60px;
+        }
+
+        .modal-footer {
+            bottom: 0;
+            height: 60px;
+        }
     }
 }
 
