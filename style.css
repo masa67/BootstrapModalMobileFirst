@@ -21,7 +21,7 @@
     left: 0;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .modal-body {
@@ -35,6 +35,41 @@
     position: absolute;
     bottom: 0;
     height: 72px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        bottom: inherit;
+        height: inherit;
+        left: inherit;
+        margin: 30px auto;
+        position: relative;
+        right: inherit;
+        top: inherit;
+        width: 600px;
+    }
+
+    .modal-content {
+        border-radius: 6px;
+        bottom: 60px;
+        left: inherit;
+        position: relative;
+        top: inherit;
+        width: inherit;
+    }
+
+    .modal-body {
+        bottom: inherit;
+        position: relative;
+        top: inherit;
+    }
+
+    .modal-footer {
+        position: relative;
+        bottom: 0;
+        height: inherit;
+    }
 }
 
 .mymodal {
