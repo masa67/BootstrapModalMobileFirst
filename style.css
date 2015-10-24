@@ -44,7 +44,6 @@
         height: inherit;
         left: inherit;
         margin: 30px auto;
-        position: relative;
         right: inherit;
         top: inherit;
         width: 600px;
@@ -52,23 +51,20 @@
 
     .modal-content {
         border-radius: 6px;
-        bottom: 60px;
+        bottom: 20px;
         left: inherit;
-        position: relative;
         top: inherit;
         width: inherit;
     }
 
     .modal-body {
-        bottom: inherit;
-        position: relative;
-        top: inherit;
+        bottom: 60px;
+        top: 60px;
     }
 
     .modal-footer {
-        position: relative;
         bottom: 0;
-        height: inherit;
+        height: 60px;
     }
 }
 
