@@ -1,0 +1,78 @@
+
+.modal {
+    background-color: white;
+}
+
+.modal-dialog {
+    bottom: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: initial;
+}
+
+.modal-content {
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    min-height: 320px;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.modal-body {
+    bottom: 80px;
+    overflow: auto;
+    position: absolute;
+    top: 60px;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    height: 72px;
+}
+
+.mymodal {
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+}
+
+.mymodal-dialog {
+    bottom: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.mymodal-content {
+    background-color: white;
+    bottom: 0;
+    padding: 0px 5px 5px 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.mymodal-body {
+    bottom: 80px;
+    overflow: auto;
+    position: absolute;
+    top: 60px;
+}
+
+.mymodal-footer {
+    bottom: 0;
+    height: 72px;
+    position: absolute;
+}
