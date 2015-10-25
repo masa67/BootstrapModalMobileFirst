@@ -53,20 +53,35 @@
 
         .modal-content {
             border-radius: 6px;
-            bottom: 20px;
+            bottom: initial;
             left: inherit;
             top: inherit;
             width: inherit;
         }
 
         .modal-body {
-            bottom: 60px;
-            top: 60px;
+            position: static;
         }
 
         .modal-footer {
+            height: 66px;
+            position: relative;
+        }
+
+        .fixed-height .modal-content {
+            bottom: inherit;
+        }
+
+        .fixed-height .modal-body {
+            bottom: 60px;
+            position: absolute;
+            top: 60px;
+        }
+
+        .fixed-height .modal-footer {
             bottom: 0;
             height: 60px;
+            position: absolute;
         }
     }
 }
