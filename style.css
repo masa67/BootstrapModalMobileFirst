@@ -41,47 +41,95 @@
         width: 600px;
     }
 
-    @media (min-height: 500px) {
-        .modal-dialog {
-            bottom: inherit;
-            height: inherit;
-            left: inherit;
-            margin: 30px auto;
-            right: inherit;
-            top: inherit;
-        }
+    .fixed-height .modal-content {
+        position: absolute;
+    }
+}
 
-        .modal-content {
-            border-radius: 6px;
-            bottom: initial;
-            left: inherit;
-            top: inherit;
-            width: inherit;
-        }
+/* This works for IE:
 
-        .modal-body {
-            position: static;
-        }
+@media (min-width: 768px) and (min-height: 500px) {
+    .modal-dialog {
+        bottom: inherit;
+        height: inherit;
+        left: auto; /* inherit; *//*
+        margin: 30px auto;
+        position: relative; /* new *//*
+        right: inherit;
+        top: auto; /* inherit; *//*
+    }
 
-        .modal-footer {
-            height: 66px;
-            position: relative;
-        }
+    .modal-content {
+        border-radius: 6px;
+        bottom: auto; /* initial; *//*
+        left: inherit;
+        top: inherit;
+        width: inherit;
+    }
 
-        .fixed-height .modal-content {
-            bottom: inherit;
-        }
+    .modal-body {
+        position: static;
+    }
 
-        .fixed-height .modal-body {
-            bottom: 60px;
-            position: absolute;
-            top: 60px;
-        }
+    .modal-footer {
+        height: 66px;
+        position: relative;
+    }
 
-        .fixed-height .modal-footer {
-            bottom: 0;
-            height: 60px;
-            position: absolute;
-        }
+    .fixed-height .modal-content {
+        position: fixed; /* new: chrome not happy *//*
+        top: 30px;
+        bottom: 30px;
+    }
+
+    .fixed-height .modal-body {
+        bottom: 60px;
+        position: absolute;
+        top: 60px;
+    }
+
+    .fixed-height .modal-footer {
+        bottom: 0;
+        height: 60px;
+        position: absolute;
+    }
+}
+*/
+
+@media (min-width: 768px) and (min-height: 500px) {
+
+    .modal-dialog {
+        bottom: 30px;
+        height: initial;
+        top: 30px;
+    }
+
+    .modal-content {
+        bottom: auto;
+    }
+
+    .modal-body {
+        bottom: auto;
+        position: static;
+        top: auto;
+    }
+
+    .modal-footer {
+        position: static;
+    }
+
+    .fixed-height .modal-content {
+        bottom: 0;
+        position: fixed;
+    }
+
+    .fixed-height .modal-body {
+        bottom: 80px;
+        position: absolute;
+        top: 60px;
+    }
+
+    .fixed-height .modal-footer {
+        position: absolute;
     }
 }
